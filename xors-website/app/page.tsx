@@ -100,10 +100,10 @@ export default function Home() {
       </main>
       <main className="flex min-h-screen w-full max-w-3xl flex-col sm:flex-row items-center justify-center gap-12 py-32 px-16 bg-white sm:items-center snap-start shrink-0 mx-auto">
         <div className="flex flex-col items-start gap-6 text-left max-w-md">
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+          <p className="max-w-md leading-8 text-zinc-600 dark:text-zinc-400">
             <a
-              href="mailto:dihodih@gmail.com"
-              className="font-bold text-3xl rainbow-text"
+              href="mailto:xorssoftware@gmail.com"
+              className="rainbow-text font-bold text-2xl sm:text-3xl"
             >
               xorssoftware@gmail.com
             </a>
