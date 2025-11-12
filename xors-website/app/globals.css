@@ -24,6 +24,8 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
 @keyframes rainbow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -45,4 +47,30 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow 4s ease infinite;
+}
+
+
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(30px) rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) translateX(30px) rotate(-180deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(30px) rotate(-360deg);
+  }
+}
+
+.animate-orbit-slow {
+  animation: orbit 14s linear infinite;
+}
+
+.animate-orbit-medium {
+  animation: orbit 10s linear infinite;
+}
+
+.animate-orbit-fast {
+  animation: orbit 7s linear infinite;
 }

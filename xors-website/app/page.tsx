@@ -59,12 +59,6 @@ export default function Home() {
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black">
             we can help.
           </h1>
-          {/* <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            hire us{" "}
-            <a href="mailto:dihodih@gmail.com" className="font-medium">
-              dihodih@gmail.com
-            </a>
-          </p> */}
         </div>
 
         <Image
@@ -75,34 +69,62 @@ export default function Home() {
           height={60}
           priority
         />
-
-        {/* <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div> */}
       </main>
       {/* SECTION 3 */}
+      <main className="relative min-h-screen w-full max-w-3xl grid grid-cols-1 sm:grid-cols-2 place-items-center gap-12 sm:gap-x-24 py-32 bg-white snap-start shrink-0 mx-auto overflow-hidden">
+        {/* TEXT SECTION */}
+        <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-6 max-w-md justify-self-center sm:justify-self-end z-10">
+          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black">
+            ask them
+          </h1>
+        </div>
+
+        {/* LOVE HAMSTER (center focus) */}
+        <div className="relative flex items-center justify-center z-10">
+          <Image
+            src="/lovehamster.svg"
+            alt="Love Hamster"
+            width={300}
+            height={60}
+            priority
+          />
+        </div>
+
+        {/* FLOATING FRIENDS */}
+        <Image
+          className="absolute animate-orbit-slow top-[10%] left-[15%]"
+          src="/one.svg"
+          alt="One"
+          width={70}
+          height={70}
+          priority
+        />
+        <Image
+          className="absolute animate-orbit-medium top-[5%] right-[20%]"
+          src="/two.svg"
+          alt="Two"
+          width={70}
+          height={70}
+          priority
+        />
+        <Image
+          className="absolute animate-orbit-fast bottom-[15%] left-[10%]"
+          src="/three.svg"
+          alt="thre"
+          width={70}
+          height={70}
+          priority
+        />
+        <Image
+          className="absolute animate-orbit-slow bottom-[10%] right-[15%]"
+          src="/four.svg"
+          alt="four"
+          width={70}
+          height={70}
+          priority
+        />
+      </main>
+      {/* SECTION 4 */}
       <main className="min-h-screen w-full max-w-3xl grid grid-cols-1 sm:grid-cols-2 place-items-center gap-12 sm:gap-x-24 py-32 bg-white snap-start shrink-0 mx-auto">
         <div className="flex flex-col items-start gap-6 text-left max-w-md justify-self-center sm:justify-self-end">
           <p className="max-w-md leading-8 text-zinc-600 dark:text-zinc-400">
@@ -123,32 +145,6 @@ export default function Home() {
           height={60}
           priority
         />
-
-        {/* <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div> */}
       </main>
     </div>
   );
